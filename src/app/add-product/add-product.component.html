@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Add Product</h2>
+  <form #productForm="ngForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="form-field">
+      <mat-label>Product Name</mat-label>
+      <input matInput [(ngModel)]="product.productName" name="productName" required>
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <mat-label>Product Type</mat-label>
+      <input matInput [(ngModel)]="product.productType" name="productType" required>
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <mat-label>Product Category</mat-label>
+      <mat-select [(ngModel)]="product.productCategory" name="productCategory" required>
+        <mat-option value="Savings">Savings</mat-option>
+        <mat-option value="Checking">Checking</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,47 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+html, body { 
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mat-sidenav-container {
+  height: calc(100vh - 64px);
+}
+
+.mat-sidenav {
+  width: 250px;
+  padding: 15px;
+}
+
+.content {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+.active-link {
+  background-color: rgba(0,0,0,.1);
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.main-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
